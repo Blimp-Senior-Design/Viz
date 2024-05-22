@@ -1,0 +1,40 @@
+#+title: Viz
+
+
+Viz is a visualization util that make plotting data from the experiment
+easier.
+
+
+** Example Usage
+
+
+Using it to plot mocap data.
+#+begin_src python
+from Viz.Viz import Viz
+
+viz = Viz()
+
+# this will record 1000 points at a time
+# once that size is reached it will clear old
+# points
+viz.record_trajector_real(points, depth=1000)
+
+# It will plot the trajectory and save it in a file
+viz.plot_trajectory("figure1.png")
+#+end_src
+
+Using it with mujoco Model
+
+#+begin_src python
+from Viz.Viz import Viz
+
+# You can pass MjData from Mujoco so
+viz = Viz(model)
+
+# You need to pass the object name inside the
+# simulation that you want to track
+viz.record_trajector_sim("mylar", depth=1000)
+
+# It will plot the trajectory and save it in a file
+viz.plot_trajectory("figure1.png")
+#+end_src
