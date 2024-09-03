@@ -10,5 +10,6 @@ version = "0.0.1"
 dependencies = [
     "mujoco",
     "matplotlib",
-    "setuptools"
+    "setuptools",
+    "numpy==1.26.4"
 ]

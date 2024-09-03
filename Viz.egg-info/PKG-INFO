@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Viz
+Version: 0.0.1
+Requires-Dist: mujoco
+Requires-Dist: matplotlib
+Requires-Dist: setuptools
+Requires-Dist: numpy==1.26.4

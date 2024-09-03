@@ -1,0 +1,4 @@
+mujoco
+matplotlib
+setuptools
+numpy==1.26.4
